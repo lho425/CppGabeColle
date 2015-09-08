@@ -29,8 +29,8 @@ struct cannot_copy_and_move {
 cannot_copy_and_move() = default;
   cannot_copy_and_move(const cannot_copy_and_move&) = delete;
   cannot_copy_and_move(cannot_copy_and_move&&) = delete;
-  operator=(const cannot_copy_and_move&) = delete;
-  operator=(cannot_copy_and_move&&) = delete;
+  cannot_copy_and_move& operator=(const cannot_copy_and_move&) = delete;
+  cannot_copy_and_move& operator=(cannot_copy_and_move&&) = delete;
 };
 
 template<typename T>
