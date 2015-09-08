@@ -14,11 +14,11 @@ Boehm GC と違い、スタックをスキャンしないので、ポータブ�
 # usage
 demo.cppを読んで、実行してみて！
 
-    g++ -std=c++1y demo.cpp && ./a
+    g++ -std=c++1y demo.cpp -o demo && ./demo
 
 デバッグ出力を見たい場合は
 
-    g++ -DCPPGBCL_DEBUG_MODE -std=c++1y demo.cpp && ./a
+    g++ -DCPPGBCL_DEBUG_MODE -std=c++1y demo.cpp -o demo && ./demo
 
 # copy right
 LHO425
